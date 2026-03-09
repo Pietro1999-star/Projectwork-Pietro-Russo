@@ -61,11 +61,11 @@ body {
     font-weight: bold;
 }
 
-.hero-content{
-    position: absolute;
-    top: 30%;
-    left: 10%;
+.hero-content {
+    max-width: 750px;
+    padding: 120px 60px;
 }
+
 
 .hero-content h1 {
     font-size: 3rem;
@@ -212,3 +212,4 @@ footer {
     }
 
 }
+

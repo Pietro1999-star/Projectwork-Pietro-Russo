@@ -127,7 +127,9 @@ body {
 .section p,
 .card p,
 .report-box p,
-footer p {
+footer p,
+.kpi-box p,
+.kpi-list li {
     font-size: 1.05rem;
 }
 
@@ -160,6 +162,7 @@ footer p {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .card {
@@ -172,8 +175,42 @@ footer p {
 }
 
 .card h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #2f5d3a;
+    line-height: 1.3;
+}
+
+.card p {
+    margin-bottom: 14px;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Nuovi box per dati chiave e indicatori */
+.kpi-box {
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.kpi-box h3 {
+    margin-bottom: 15px;
+    color: #2f5d3a;
+    font-size: 1.4rem;
+}
+
+.kpi-list {
+    margin-left: 22px;
+    margin-top: 10px;
+}
+
+.kpi-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .gallery-section {
@@ -252,7 +289,12 @@ footer p:last-child {
     }
 
     .hero-content p,
-    .hero-list li {
+    .hero-list li,
+    .kpi-list li {
         font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
     }
 }

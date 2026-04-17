@@ -66,19 +66,19 @@ body {
 }
 
 .hero-content {
-    max-width: 750px;
-    padding: 100px 60px 120px;
+    max-width: 760px;
+    padding: 110px 60px 120px;
 }
 
 .hero-content h1 {
     font-size: 3.2rem;
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .hero-content p {
     font-size: 1.15rem;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     max-width: 700px;
 }
 
@@ -134,7 +134,8 @@ footer p,
 }
 
 .section-intro {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+    max-width: 850px;
 }
 
 .section.container {
@@ -178,6 +179,7 @@ footer p,
     margin-bottom: 15px;
     color: #2f5d3a;
     line-height: 1.3;
+    font-size: 1.35rem;
 }
 
 .card p {
@@ -188,7 +190,7 @@ footer p,
     margin-bottom: 0;
 }
 
-/* Nuovi box per dati chiave e indicatori */
+/* Box per dati chiave e indicatori */
 .kpi-box {
     margin-top: 30px;
     background: white;
@@ -201,6 +203,11 @@ footer p,
     margin-bottom: 15px;
     color: #2f5d3a;
     font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+.kpi-box p {
+    margin-bottom: 12px;
 }
 
 .kpi-list {
@@ -278,6 +285,7 @@ footer p:last-child {
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 14px;
     }
 
     .hero-content {
@@ -296,5 +304,10 @@ footer p:last-child {
 
     .cards {
         flex-direction: column;
+    }
+
+    .card,
+    .kpi-box {
+        padding: 22px;
     }
 }
